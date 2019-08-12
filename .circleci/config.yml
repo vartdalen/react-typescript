@@ -20,7 +20,8 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
             name: Run Test
-            command: | yarn test
+            command: |
+              yarn test
     
     build:
       working_directory: ~/repo
